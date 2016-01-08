@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="SecurityRecordingSystemClass">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1300</width>
+     <height>720</height>
+    </rect>
+   </property>
+   <property name="windowTitle">
+    <string>SecurityRecordingSystem</string>
+   </property>
+   <widget class="QWidget" name="centralWidget">
+    <widget class="QLabel" name="lblCam1">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>0</y>
+       <width>640</width>
+       <height>480</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="lineWidth">
+      <number>1</number>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblCam2">
+     <property name="geometry">
+      <rect>
+       <x>656</x>
+       <y>0</y>
+       <width>640</width>
+       <height>480</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>485</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="text">
+      <string>CAMERA 1</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::PlainText</enum>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="margin">
+      <number>1</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>911</x>
+       <y>485</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="text">
+      <string>CAMERA 2</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::PlainText</enum>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="margin">
+      <number>1</number>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="txtBoxStatus">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>600</y>
+       <width>346</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;HOLA&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QAbstractScrollArea::AdjustToContents</enum>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+ &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+ p, li { white-space: pre-wrap; }
+ &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+ &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8.25pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="openExternalLinks">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnStartStop">
+     <property name="geometry">
+      <rect>
+       <x>65</x>
+       <y>530</y>
+       <width>96</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>18</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>START</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>552</y>
+       <width>51</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="text">
+      <string>PATH</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="dropListMonTime">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>624</y>
+       <width>46</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="currentText">
+      <string>1</string>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QComboBox::AdjustToContentsOnFirstShow</enum>
+     </property>
+     <item>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>10</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>30</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>90</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>120</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>150</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>180</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>210</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>240</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>270</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>300</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>25</x>
+       <y>625</y>
+       <width>191</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="text">
+      <string>MONITORING FREQUENCY (SEC)</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblTimeStamp">
+     <property name="geometry">
+      <rect>
+       <x>567</x>
+       <y>495</y>
+       <width>166</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="text">
+      <string>2015-11-27 23:51:10</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtBoxPath">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>550</y>
+       <width>346</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>385</x>
+       <y>603</y>
+       <width>56</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="text">
+      <string>STATUS</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QMenuBar" name="menuBar">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1300</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <widget class="QMenu" name="menuSuper_Venneos_Secutiry_Recording_System_3000">
+     <property name="title">
+      <string>Super Venneos Security Recording System 3000</string>
+     </property>
+     <addaction name="actionExit"/>
+    </widget>
+    <addaction name="menuSuper_Venneos_Secutiry_Recording_System_3000"/>
+   </widget>
+   <widget class="QToolBar" name="mainToolBar">
+    <attribute name="toolBarArea">
+     <enum>TopToolBarArea</enum>
+    </attribute>
+    <attribute name="toolBarBreak">
+     <bool>false</bool>
+    </attribute>
+   </widget>
+   <widget class="QStatusBar" name="statusBar"/>
+   <action name="actionExit">
+    <property name="text">
+     <string>Exit</string>
+    </property>
+   </action>
+  </widget>
+  <layoutdefault spacing="6" margin="11"/>
+  <resources>
+   <include location="securityrecordingsystem.qrc"/>
+  </resources>
+  <connections>
+   <connection>
+    <sender>actionExit</sender>
+    <signal>triggered()</signal>
+    <receiver>SecurityRecordingSystemClass</receiver>
+    <slot>close()</slot>
+    <hints>
+     <hint type="sourcelabel">
+      <x>-1</x>
+      <y>-1</y>
+     </hint>
+     <hint type="destinationlabel">
+      <x>649</x>
+      <y>357</y>
+     </hint>
+    </hints>
+   </connection>
+  </connections>
+ </ui>
